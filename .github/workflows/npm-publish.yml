@@ -30,4 +30,4 @@ jobs:
       - run: npm ci
       - run: npm install --force or --legacy-peer-deps
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          skip_deploy_on_missing_secrets: true
